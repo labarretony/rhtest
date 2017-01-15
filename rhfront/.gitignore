@@ -1,13 +1,2 @@
 node_modules/
 *.log
-models/dataCollect.js
-routes/dataCollect.js
-build/
-dist/
-coverage/
-TEST*.xml
-config/runtime.json
-.sonar/
-.idea/
-npm-shrinkwrap.json.project
-package - Copie.json
