@@ -1,0 +1,13 @@
+rhapi:
+  build: rhapi
+  ports:
+    - "8086:8086"
+  volumes:
+    - ./rhapi/data/salarie.json:/usr/src/app/data/salarie.json
+  
+rhfront:
+  build: rhfront
+  ports:
+    - "8085:8085"
+  links:
+        - rhapi:rhapi
