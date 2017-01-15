@@ -1,0 +1,187 @@
+a {
+    color: #3b3b3b;
+    text-decoration: none;
+}
+
+div {
+	text-align:left;
+	}
+
+div#bandeau {
+	width:100%;
+	height:5%;
+	font-size: 50px;
+  color: #7a817d;
+  padding-top: 20px;
+  position: fixed;
+  top: 0%
+	}
+div#menu {
+  position: fixed;
+  float:left;
+	width:30%;
+	height:80%;
+  top: 10%
+	
+	}
+	
+div#contenu {
+	float:right;
+	width:70%;
+	height:80%;
+  right:40%
+  }
+div#piedpage {
+	clear:both;
+	width:100%;
+	height:5%;
+  position: fixed;
+  top: 90%
+	}
+
+
+
+
+#baniere{
+height:taille_fixe px;
+width:100%;
+}
+ 
+#baniere_gauche{
+width:25%;
+
+float:left;
+
+}
+ 
+#baniere_droite{
+width:75%;
+
+float:right;
+
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3b3b3b;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background: #F0F0F0;
+    
+
+}
+.title{
+  font-size: 52px;
+  color: #7a817d;
+  margin-left:80px;
+  
+}
+
+
+.info {
+  color: #27ae60;
+  margin-left:10px;
+  
+}
+.normal {
+  color: #3b3b3b;
+  margin-left:40px;
+  
+}
+
+.alert {
+  color: #ea6153;
+  margin-left:10px;
+  font-weight: bold;
+  
+}
+
+
+
+
+
+.wrapper {
+  margin: 0 auto;
+  padding-left: 10px;
+  max-width: 800px;
+  
+}
+
+.table {
+  margin: 0 0 10px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+  padding-top: 10px;
+}
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
+}
+
+.commande {
+  display: table-row;
+  background: #e9e9e9;
+  
+}
+
+
+.row {
+  display: table-row;
+  background: #f6f6f6;
+}
+.row:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+.row.header {
+  font-weight: 600;
+  color: #ffffff;
+  background: #2980b9;
+}
+.row.green {
+  background: #27ae60;
+}
+.row.blue {
+  background: #2980b9;
+}
+@media screen and (max-width: 580px) {
+  .row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+
+.form-button {
+    background: #ea6153;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #FFFFFF;
+    margin-right: 8px;
+  }
+
+.label{
+ color: #2980b9;
+ font-weight: bold; 
+}
+
+.right{
+ color: #2980b9;
+ font-weight: bold; 
+ align-content: right;
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+ 
+
+

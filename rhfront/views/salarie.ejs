@@ -1,0 +1,88 @@
+<head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>RhTest</title>
+    </head>
+
+<body>
+    <div id="bandeau"><div class="title">RhTest</div></div>
+    
+        <div id="menu">
+            <div class="wrapper">
+           
+                <div class="command">
+                    <form action="/salariefiltre" method="post">
+                    <div class="cell"><input type="text" name="rechsalarie" id="rechsalarie" autofocus/></div>
+                    <div class="cell"><input type="submit" value="Rechercher" class="form-button"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <form action="/salarie/ajouter/" method="post">
+        <div class="commande">
+            <div class="cell label">Matricule</div>
+            <div class="cell label"></div>
+        </div>    
+        <div class="commande">
+            <div class="cell"><input type="text" name="newid" id="newid" /></div>
+            <div class="cell"></div>
+        </div>  
+        <div class="commande">
+            <div class="cell label">Nom</div>
+            <div class="cell label">Prénom</div>
+        </div>      
+        <div class="commande">
+            <div class="cell"><input type="text" name="newsalarie" id="newsalarie" /></div>
+            <div class="cell"><input type="text" name="newlastname" id="newlastname" /></div>
+        </div>
+        <div class="commande">
+            <div class="cell label">Evolution</div>
+            <div class="cell label">Salaire</div>
+        </div>    
+        <div class="commande">
+            <div class="cell"><input type="text" name="newlevel" id="newlevel" /></div>
+            <div class="cell"><input type="text" name="newsalary" id="newsalary" /></div> 
+        </div>  
+        <div class="cell">
+            <input type="submit" name="OP" value="Ajouter" class="form-button"/>
+            <input type="submit" name="OP" value="Modifier" class="form-button"/> 
+        </form>
+        </div>
+        <div class=<%= levelmessage %>><%= message %></div>
+        <div class="wrapper">
+        </div>
+         
+    </div>
+ </div>
+
+ <div id="contenu">
+  
+  <div class="wrapper">
+   <div class="normal">Nombre de salariés affichés: <%= data.length %> / <%= nbsalaries %></div> 
+
+   <div class="table">
+        <div class="row header">
+            <div class="cell">Matricule</div>
+            <div class="cell">Nom</div>
+            <div class="cell">Prenom</div>
+            <div class="cell">Salaire</div>
+            <div class="cell">Evolution</div>
+            <div class="cell"></div>
+        </div>
+        <% for(var i=0 ; i < data.length ; i++) { %>
+        <div class="row">
+            <div class="cell"><%= data[i].id %></div>
+            <div class="cell"><%= data[i].name %></div>
+            <div class="cell"><%= data[i].lastname %></div>
+            <div class="cell"><%= data[i].salary %></div>
+            <div class="cell"><%= data[i].level %></div>
+            <div class="cell icone"><a href="/salarie/supprimer/<%= data[i].id %>">✘</a></div>
+        </div>
+        <% } %>
+    </div>
+</div> 
+</div>
+
+<div id="piedpage"><div class="normal">Application de test - <a href="/deleteall" title="/!\ RESET : Attention suppression définitive de vos données "><img src="a.png" height="40%" ></a><a href="/datatest" title="/!\ INIT: Attention suppression définitive de vos données, initialisation du jeu de test"><img src="c.png" height="40%" ></a><a target="_blank" title="Documentation API" href="<%= servapi %>"><img src="b.png" height="40%"></a></div></div>
+</body>
+
