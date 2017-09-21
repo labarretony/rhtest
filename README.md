@@ -43,7 +43,8 @@ Ouvrez le fichier c:\test\rh\rhfront\package.json et modifier l'url
           "api": "http://rhapi:8086"   -- URL de l'api démarrée dans le paragraphe précédent, si vous travailler en local, l'url sera http://localhost:8086
         }
 ```
-        
+ A noter que si vous travaillez uniquement en local, il est nécessaire de modifier de nom rhapi par localhost.
+ 
 Démarrer un nouveau terminal Git bash puis exécuter la commande
 ``` 
 cd /c/test/rhtest/rhfront/
