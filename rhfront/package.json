@@ -2,7 +2,7 @@
     "name": "rh-front",
     "config":
         { "port" : "8085",
-          "api": "http://rhapi:8086"
+          "api": "http://localhost:8086"
         },
     "version": "1.0.0",
     "dependencies": {
