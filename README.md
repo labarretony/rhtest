@@ -2,22 +2,22 @@
 
 Les TP concernant le test nécessitent l'application mise sous test appelée RhTest disponible dans les documents ci dessous. Pour faciliter les travaux en séance, vous devrez vous munir de votre ordinateur portable en disposant des droits d'accès administrateur sur celui-ci. L'exécution de l'application nécessite de disposer de nodeJs. Les explications ci dessous sont données à titre indicatif pour une installation sous Windows. L'installation est également possible sous Linux (ubuntu), non décrit dans cet article. 
 
+![Copie d'écran de l'application RhTest](/docs/screenshot.png)
+
 ## Préparation
-Si nodeJs n'est pas installé sur votre poste, veuillez passer par l'installation: https://nodejs.org/en/
+1. Si NodeJs n'est pas installé sur votre poste, veuillez passer par l'installation: https://nodejs.org/en/. Installer la version 6.9.4 (LTS) par défaut
 
-Installer la version 6.9.4 (LTS) par défaut
+2. Installer Git Bash depuis https://git-for-windows.github.io/ en mode par défaut
 
-Installer Git Bash depuis https://git-for-windows.github.io/ en mode par défaut
+3. Redémarrer votre poste après installation
 
-Redémarrer votre poste après installation
+4. Après redémarrage, lancer git bash et vérifier la version de NodeJs
 
-Après redémarrage, lancer git bash et vérifier la version de node
+5. Créer un répertoire c:/test
 
-Créer un répertoire c:/test
+6. Se positionner dans le répertoire test et récupérer le code de l'application à mettre sous test:
 
-Se positionner dans le répertoire test et récupérer le code de l'application à mettre sous test:
-
-``` git clone https://github.com/labarretony/rhtest.git ```
+`git clone https://github.com/labarretony/rhtest.git`
 
 Cette application est composée d'un backend disponible dans rhapi et d'un front disponible dans rhfront
 
@@ -37,20 +37,20 @@ A noter que si votre port 8086 est déjà occupé, vous pouvez changer la config
 ## Démarrage de l'application Frontend
 
 Ouvrez le fichier c:\test\rh\rhfront\package.json et modifier l'url 
+```json
+"config": { 
+  "port" : "8085",
+  "api": "http://rhapi:8086"
+}
 ```
-"config":
-        { "port" : "8085",    -- port d'écoute de votre application front end
-          "api": "http://rhapi:8086"   -- URL de l'api démarrée dans le paragraphe précédent, si vous travailler en local, l'url sera http://localhost:8086
-        }
-```
- A noter que si vous travaillez uniquement en local, il est nécessaire de modifier de nom rhapi par localhost.
+ - `port` : port d'écoute de votre application front end
+ - `api` : URL de l'api démarrée dans le paragraphe précédent. Si vous travailler en local, l'url sera http://localhost:8086
  
-Démarrer un nouveau terminal Git bash puis exécuter la commande
-``` 
+Démarrer un nouveau terminal Git bash puis exécuter la commande :
+```
 cd /c/test/rhtest/rhfront/
 npm install
 npm start 
 ```
-
 
 Tester le démarrage de l'application en ouvrant un navigateur (firefox ou chrome): http://localhost:8085
