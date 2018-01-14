@@ -4,9 +4,9 @@ Dans ce TP, on cherche à vérifier que l'application graphique respecte les bes
 
 Pour corriger les bugs, les développeurs seront ensuite amené à retravailler sur l'application. Pour les testeurs, l'automate permettra de rapidement revalider l'application sans intervention humaine. 
 
-Aujourd'hui, nous utiliserons l'outil Selenium IDE qui permet de réaliser d'enregistrer des séquences d'actions (clic, saisie clavier), d'y ajouter des points de contrôles (présence d'un message d'erreur, ajout d'un utilisateur dans un tableau) et de les rejouer à volontée afin d'assurer la non regression de l'application sous test.
+Aujourd'hui, nous utiliserons l'outil SideeX qui permet de réaliser d'enregistrer des séquences d'actions (clic, saisie clavier), d'y ajouter des points de contrôles (présence d'un message d'erreur, ajout d'un utilisateur dans un tableau) et de les rejouer à volonté afin d'assurer la non regression de l'application sous test.
 
-![Copie d'écran de l'application RhTest](/docs/selenium-ide.gif)
+![Copie d'écran de l'application RhTest](/docs/screenshot.png)
 
 ## Livrable
 
@@ -17,65 +17,62 @@ Le livrable de ce TP est un dossier de tests présentant :
 
 ## Pré requis
 
-> Suite à la dernière version de Firefox, le plugin Selenium IDE n'est plus compatible. Il est donc nécessaire d'utiliser une version précédente de Firefox. Si le poste dispose déjà d'une version de Firefox, celle-ci devra donc être `downgradée` pour permettre la réalisation du TP. 
+ 1. Installation de l'application RhTest
+ 2. Disposer du référentiel d'exigences
+ 3. Installer le plugin Chrome ou Firefox SideeX depuis la page http://sideex.org/#download
+ ![Installation Selenium](/docs/SideeX.png)
 
-> Il faudra aussi temporairement désactiver l'installation automatique de la mise à jour de Firefox
+ Une fois SideeX installé, l'outil est disponible dans les barres d'outils de  Chrome ou Firefox sur l'icone 
 
-> A l'issu de ce TP, la mise à jour de Firefox pourra se faire automatiquement si l'étudiant souhaite conserver ce navigateur.
+ ![Lancer SideeX](/docs/Sideex-Launch.png)
 
- 1. Télécharger la version `54` de Firefox depuis https://ftp.mozilla.org/pub/firefox/releases/54.0/
-   - Windows : https://ftp.mozilla.org/pub/firefox/releases/54.0/win64/fr/Firefox%20Setup%2054.0.exe
-   - Linux : https://ftp.mozilla.org/pub/firefox/releases/54.0/linux-x86_64/fr/firefox-54.0.tar.bz2
-   - Mac : https://ftp.mozilla.org/pub/firefox/releases/54.0/mac/fr/Firefox%2054.0.dmg
- 2. Désactiver les mises à jour automatiques de Firefox (penser à les réactiver après le TP)
-   - Accéder à l'adresse `about:preferences#advanced`
-   - Onglet ou Section `Mise à jour`
-   - Cocher `Vérifier l'existence de mises à jour mais vous laisser décider de leur installation`
- 3. Installer le plugin Selenium et Firefox depuis la page https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/
- 4. Démarrer de l'application RhTest
- 5. Disposer du référentiel d'exigences
+## Présentation de SideeX
 
- ![Installation Selenium](/docs/install-selenium.png)
-
-## Présentation de Selenium IDE
-
-Selenium IDE est un outil simple et facile d’utilisation qui permet de capturer un scénario utilisateur puis de le rejouer.
+SideeX est un outil simple et facile d’utilisation qui permet de capturer un scénario utilisateur puis de le rejouer.
 Il permet de comprendre rapidement l'intérêt des tests fonctionnels automatisés.
 
-Une fois enregistrés, ces tests peuvent être sauvegardés dans différents languages (HTML par défaut, Java, PHP, Javascript, etc). Les tests peuvent aussi être joués sur différents navigateurs (Chrome, Firefox, IE, Opéra, etc) ou sur les mobiles. 
+Une fois enregistrés, ces tests peuvent être sauvegardés au format HTML par défaut. D'autres outils plus évolués permettent de prendre en charge des mangages Java, PHP, Javascript, etc. Les tests peuvent aussi être joués sur différents navigateurs Chrome, Firefox, ou sur les mobiles. Un export au format Katalon permet également d'effectuer des manipulations complémentaires. 
 
-Il existe différents projets qui utilise la technologie Selenium : 
+SideeX respecte le standard Selenium. Selenium Ide était jusque là très utilisé jusqu'aà la version 45 de Firefox. Il existe différents projets qui utilise la technologie Selenium : 
  - Selenium IDE qui permet de comprendre les tests automatisés, 
  - [http://www.seleniumhq.org/projects/remote-control/](Selenium RC) qui permet de piloter différents navigateurs,
  - [http://www.protractortest.org](Protractor) pour tester les applications AngularJS,
  - et même des applications en ligne, comme [https://www.browserstack.com](BrowserStack), qui permettent aux développeurs web d'accéder à des fermes de navigateurs.
 
-### Lancer Selenium IDE
 
-Une fois Selenium installé, l'outil est disponible dans le menu de Firefox. Cette barre n’est pas visible par
-défaut. Pour afficher la barre, appuyer sur la touche `alt`, puis cliquer sur `Outils` et enfin sur `Selenium IDE`
+### Interface Graphique de SideeX
 
- ![Activer Selenium](/docs/activer-selenium.png)
+![Installation SideeX](/docs/SideeX.png)
 
-### Interface Graphique de Selenium IDE
-
-![Installation Selenium](/docs/Selenium_IDE.png)
-
-Une fois démarré, l'interface Selenium se décompose en plusieurs sections
+Une fois démarré, l'interface SideeX se décompose en plusieurs sections
 
 #### Barre d'outils
 
-![Actions Selenium](/docs/Selenium_Actions.png)
+![Actions SideeX](/docs/SideeX-Outils.png)
 
-La barre d'outils contient des boutons qui permettent de contrôler l'exécution des cas de tests
+La barre d'outils contient des boutons qui permettent de contrôler l'exécution des cas de tests et notamment la rapidité d'exécution.
 
-![Actions  Selenium](/docs/Selenium_ActionsExplain.png)
+![Actions  SideeX](/docs/SideeX-execution.png)
 
 #### Volets Cas de Test
 
-![Actions Selenium](/docs/Selenium_CasDeTest.png)
+![Actions SideeX](/docs/SideeX_CasDeTest.png)
 
 Dans ce volet, on organisera les cas de tests en fonction du référentiel d'exigences
+
+#### Volets Détail du Cas de Test
+
+![Detail SideeX](/docs/SideeX_DetailCasDeTest.png)
+Ce volet permet de détailler chacune des actions de test et des points de contrôle.  En éxécution il permet également de suivre chacune des étapes de test et leur résultat.
+
+#### Volets Résultats et log
+
+![Detail SideeX](/docs/Sideex-Result.png)
+Ce volet permet de consolider le nombre de test passant ou en échec. Le détail de l'éxécution se trouve quanà un lui dans un journal d'exécution en bas de la fenêtre SideeX.
+
+
+
+
  
 ## Travail à réaliser
 
@@ -92,11 +89,11 @@ Une fois que l'ensemble des exigences sont enregistrées, rejouer la séquence c
 
 Voici un exemple d'enregistrement et de rejeu.
 
-![Actions Selenium](/docs/selenium_ide_exemple.gif)
+![Exemple Jeu](/docs/Sideex-ExempleJeu.png)
 
 ## Pour aller plus loin
 
-En plus des commandes disponibles via l'enregistrement, Selenium IDE peut utiliser les méthodes suivantes :
+En plus des commandes disponibles via l'enregistrement, SideeX peut utiliser les méthodes suivantes :
 
  - `open` : ouvre une page à l'aide d'une URL.
  - `clickAndWait` : effectue une opération de clic, et attend en option une nouvelle page à charger.
@@ -111,3 +108,9 @@ sur la page. `verify` est non bloquant, alors que `assert` l'est.
 Appelée automatiquement lorsque clickAndWait est utilisé.
  - `waitForElementPresent` : suspend l'exécution jusqu'à ce qu'un élément de l'interface telle que
 définie par sa balise HTML, soit présent sur la page.
+
+
+Ces commandes sont également disponibles depuis la page web, sur un clic droit. 
+![Sideex Assert](/docs/Sideex-assert.png.png)
+
+Ceci permet de faciliter la mise en place de point de contrôle. Attention toutefois à cette méthode qui semble rapide et pourtant peut engendrer des problème de qualité. En effet l'enregistrement des proints de controles présume que le logiciel mis sous test et en bon état de fonctionnement, ce qui n'est pas le cas dans notre cas de figure...
