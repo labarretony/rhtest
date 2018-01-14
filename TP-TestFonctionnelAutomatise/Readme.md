@@ -20,7 +20,6 @@ Le livrable de ce TP est un dossier de tests présentant :
  1. Installation de l'application RhTest
  2. Disposer du référentiel d'exigences
  3. Installer le plugin Chrome ou Firefox SideeX depuis la page http://sideex.org/#download
- ![Installation Selenium](/docs/SideeX.png)
 
  Une fois SideeX installé, l'outil est disponible dans les barres d'outils de  Chrome ou Firefox sur l'icone 
 
@@ -33,7 +32,7 @@ Il permet de comprendre rapidement l'intérêt des tests fonctionnels automatis�
 
 Une fois enregistrés, ces tests peuvent être sauvegardés au format HTML par défaut. D'autres outils plus évolués permettent de prendre en charge des mangages Java, PHP, Javascript, etc. Les tests peuvent aussi être joués sur différents navigateurs Chrome, Firefox, ou sur les mobiles. Un export au format Katalon permet également d'effectuer des manipulations complémentaires. 
 
-SideeX respecte le standard Selenium. Selenium Ide était jusque là très utilisé jusqu'aà la version 45 de Firefox. Il existe différents projets qui utilise la technologie Selenium : 
+SideeX respecte le standard Selenium. Selenium Ide était jusque là très utilisé jusqu'aà la version 45 de Firefox. Il existe différents projets qui utilisent la technologie Selenium : 
  - Selenium IDE qui permet de comprendre les tests automatisés, 
  - [http://www.seleniumhq.org/projects/remote-control/](Selenium RC) qui permet de piloter différents navigateurs,
  - [http://www.protractortest.org](Protractor) pour tester les applications AngularJS,
@@ -42,7 +41,7 @@ SideeX respecte le standard Selenium. Selenium Ide était jusque là très utili
 
 ### Interface Graphique de SideeX
 
-![Installation SideeX](/docs/SideeX.png)
+![Installation SideeX](/docs/Sideex-ExempleJeu.png.png)
 
 Une fois démarré, l'interface SideeX se décompose en plusieurs sections
 
@@ -63,11 +62,13 @@ Dans ce volet, on organisera les cas de tests en fonction du référentiel d'exi
 #### Volets Détail du Cas de Test
 
 ![Detail SideeX](/docs/SideeX_DetailCasDeTest.png)
+
 Ce volet permet de détailler chacune des actions de test et des points de contrôle.  En éxécution il permet également de suivre chacune des étapes de test et leur résultat.
 
 #### Volets Résultats et log
 
 ![Detail SideeX](/docs/Sideex-Result.png)
+
 Ce volet permet de consolider le nombre de test passant ou en échec. Le détail de l'éxécution se trouve quanà un lui dans un journal d'exécution en bas de la fenêtre SideeX.
 
 
@@ -111,6 +112,6 @@ définie par sa balise HTML, soit présent sur la page.
 
 
 Ces commandes sont également disponibles depuis la page web, sur un clic droit. 
-![Sideex Assert](/docs/Sideex-assert.png.png)
+![Sideex Assert](/docs/Sideex-assert.png)
 
 Ceci permet de faciliter la mise en place de point de contrôle. Attention toutefois à cette méthode qui semble rapide et pourtant peut engendrer des problème de qualité. En effet l'enregistrement des proints de controles présume que le logiciel mis sous test et en bon état de fonctionnement, ce qui n'est pas le cas dans notre cas de figure...
