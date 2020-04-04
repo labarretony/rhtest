@@ -12,20 +12,20 @@ Le support de présentation du cours permet de disposer des éléments essentiel
 ## TPs
 Pour illustrer les phases thériques vus en cours, les manipulations se font au travers de travaux pratiques. Ces TPs sont organisés autour de 4 thèmes et dimensionnés au regard du volume d'heures disponibles sur le module. Le temps en séance permet de manipuler les outils mais nécessite un travail personnel de synthèse et de rédaction du dossier de test.
 
-1. Construire son référentiel d'exigence
-2. Construire son test d'Api
-3. Construire son test de montée en charge
-4. Construire son premier test fonctionnel automatisé
+1. [Construire son référentiel d'exigence](Cours/Cours_diapo_2020.pdf)
+2. [Construire son test d'Api](TP-TestAPIAutomatise\Readme.md)
+3. [Construire son test de montée en charge](TP-TestCharge\Readme.md)
+4. [Construire son premier test fonctionnel automatisé](TP-TestFonctionnelAutomatise\Readme.md)
 
-Les travaux sont à réaliser par groupe de 2 ou 3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. Hormis le référentiel d'exigence qui est le 1er TO à réaliser, les 3 autres peuvent être effectués dans l'ordre que vous souhaitez mais s'appuie sur le 1er.
+Les travaux sont à réaliser par groupe de 2 ou 3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. Hormis le référentiel d'exigence qui est le 1er TP à réaliser, les 3 autres peuvent être effectués dans l'ordre que vous souhaitez mais s'appuie systématiquement sur le 1er.
 
 
-Le rendu final est un zip nommé: 2020-[Noms des personnes du groupe].zip et envoyé à labarre-a@mgdis.fr et doit contenir:
+Le rendu final est un zip nommé: 2020-[Noms des personnes du groupe].zip, envoyé à labarre-a@mgdis.fr et doit contenir:
 
-1. le référentiel d'exigence fourni en modèle dans le tp complété des cas de test et exigences établi en fonction du cahier des charges.
+1. le référentiel d'exigence fourni en modèle dans le tp complété des cas de test et exigences établis en fonction du cahier des charges.
 2. Le Workspace SoapUI contenant les ressources demandées ainsi que les cas de test et leurs assertions.
-3. Le jmx (et fichiers additionnels tels que csv par exemple) du test de charge ansi que les résultats
-4. Les cas de test implémentés dans SeedX et enregistré au format HTML
+3. Le jmx pour Jmeter (et fichiers additionnels tels que csv par exemple) du test de charge ansi que les résultats
+4. Les cas de test implémentés dans SideeX et enregistré au format HTML
 5. Un dossier de test (Max 4 pages) présentant les résultats des test fonctionnels, d'api et de charge qui doivent montrer la bonne exécution du test ou au contraire les défaillances constatées.
 
 
