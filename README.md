@@ -4,53 +4,28 @@ Les TP concernant le test nécessitent l'application mise sous test appelée RhT
 
 ![Copie d'écran de l'application RhTest](/docs/screenshot.png)
 
-## Préparation
-1. Si NodeJs n'est pas installé sur votre poste, veuillez passer par l'installation: https://nodejs.org/en/. Installer la version 10.15.0 (LTS) par défaut
+Pour installer cette application, veuillez suivre les indications présentée [ici](docs/prerequis_TP.md)
 
-2. Installer Git Bash depuis https://git-for-windows.github.io/ en mode par défaut
+## Cours
+Le support de présentation du cours permet de disposer des éléments essentiels et memo, mais ne présente pas tous les exemples donnés en séance. il est disponible [ici](Cours/Cours_diapo_2020.pdf)
 
-3. Redémarrer votre poste après installation
+## TPs
+Pour illustrer les phases thériques vus en cours, les manipulations se font au travers de travaux pratiques. Ces TPs sont organisés autour de 4 thèmes et dimensionnés au regard du volume d'heures disponibles sur le module. Le temps en séance permet de manipuler les outils mais nécessite un travail personnel de synthèse et de rédaction du dossier de test.
 
-4. Après redémarrage, lancer git bash et vérifier la version de NodeJs
+1. Construire son référentiel d'exigence
+2. Construire son test d'Api
+3. Construire son test de montée en charge
+4. Construire son premier test fonctionnel automatisé
 
-5. Créer un répertoire c:/test
+Les travaux sont à réaliser par groupe de 2 ou 3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. Hormis le référentiel d'exigence qui est le 1er TO à réaliser, les 3 autres peuvent être effectués dans l'ordre que vous souhaitez mais s'appuie sur le 1er.
 
-6. Se positionner dans le répertoire test et récupérer le code de l'application à mettre sous test:
 
-`git clone https://github.com/labarretony/rhtest.git`
+Le rendu final est un zip nommé: 2020-[Noms des personnes du groupe].zip et envoyé à labarre-a@mgdis.fr et doit contenir:
 
-Cette application est composée d'un backend disponible dans rhapi et d'un front disponible dans rhfront
+1. le référentiel d'exigence fourni en modèle dans le tp complété des cas de test et exigences établi en fonction du cahier des charges.
+2. Le Workspace SoapUI contenant les ressources demandées ainsi que les cas de test et leurs assertions.
+3. Le jmx (et fichiers additionnels tels que csv par exemple) du test de charge ansi que les résultats
+4. Les cas de test implémentés dans SeedX et enregistré au format HTML
+5. Un dossier de test (Max 4 pages) présentant les résultats des test fonctionnels, d'api et de charge qui doivent montrer la bonne exécution du test ou au contraire les défaillances constatées.
 
-## Démarrage du Backend
 
-Lancer un nouveau terminal Git bash et se positionner dans le répertoire rhapi puis exécuter:
-
-``` 
-cd /c/test/rhtest/rhapi/
-npm install
-npm start 
-```
-
-Vous devez obtenir le message : Démarrage de l'application sur le port 8086.
-A noter que si votre port 8086 est déjà occupé, vous pouvez changer la configuration dans le fichier package.json.
-
-## Démarrage de l'application Frontend
-
-Ouvrez le fichier c:\test\rh\rhfront\package.json et modifier l'url 
-```json
-"config": { 
-  "port" : "8085",
-  "api": "http://rhapi:8086"
-}
-```
- - `port` : port d'écoute de votre application front end
- - `api` : URL de l'api démarrée dans le paragraphe précédent. Si vous travailler en local, l'url sera http://localhost:8086
- 
-Démarrer un nouveau terminal Git bash puis exécuter la commande :
-```
-cd /c/test/rhtest/rhfront/
-npm install
-npm start 
-```
-
-Tester le démarrage de l'application en ouvrant un navigateur (firefox ou chrome): http://localhost:8085

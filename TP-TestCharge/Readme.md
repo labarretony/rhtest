@@ -10,7 +10,7 @@ Les tirs de charge sont effectués sur l’application RhTest créée pour les b
 
 ## Livrable
 L’étudiant devra présenter, dans le dossier de tests, les résultats du test de charge commentés par ses analyses sur chacun des graphiques présentés afin de montrer la bonne exécution du test de charge ou au contraire montrer les défaillances constatées.
-
+Aussi, vous devrez construire le graphique qui permet de montrer la montée en charge en comparant les résultats obtenus à 1-5-10-30 utilisateurs simultanés.
 Le Jmx (fichier de travail de Jmeter) sera à fournir à la fin du TP.
 
 ## Pré requis
@@ -18,7 +18,7 @@ Le Jmx (fichier de travail de Jmeter) sera à fournir à la fin du TP.
  1. Installation de l'application RhTest
  2. Disposer du référentiel d'exigences avec le ou les exigences de performance
  3. Installer L’outil Jmeter (http://jmeter.apache.org/) disponible à l’adresse :
-http://jmeter.apache.org/download_jmeter.cgi. En date de préparation du TP, la version est la 3.2
+http://jmeter.apache.org/download_jmeter.cgi. En date de préparation du TP, la version est la 5.2.1
 Installer les Jmeter plugins. Ils sont disponibles à l’adresse https://jmeterplugins.org/wiki/PluginsManager/, en téléchargeant je jar disponible sur https://jmeter-plugins.org/get/
 et en le copiant dans le dossier lib/ext
 4. Lancer Jmeter.bat (ou jmeter.sh) selon le système d’exploitation utilisé puis aller dans Options/Plugins Manager et cocher dans les plugins disponibles jpgc – Standard set et Composite Timeline Graph.

@@ -11,9 +11,8 @@ Aujourd'hui, nous utiliserons l'outil SideeX qui permet de réaliser d'enregistr
 ## Livrable
 
 Le livrable de ce TP est un dossier de tests présentant :
-- Les cas de test implémentés dans selenium et enregistrer au format HTML
-- Les résultats du test fonctionnel commentés par les analyses de l’étudiant sur chacun des cas de tests
-- Une conclusion sur les cas de test OK ou KO afin de montrer la bonne exécution du test fonctionnel ou de montrer les défaillances constatées.
+- Les cas de test implémentés dans SideeX et enregistré au format HTML
+
 
 ## Pré requis
 
@@ -32,7 +31,7 @@ Il permet de comprendre rapidement l'intérêt des tests fonctionnels automatis�
 
 Une fois enregistrés, ces tests peuvent être sauvegardés au format HTML par défaut. D'autres outils plus évolués permettent de prendre en charge des mangages Java, PHP, Javascript, etc. Les tests peuvent aussi être joués sur différents navigateurs Chrome, Firefox, ou sur les mobiles. Un export au format Katalon permet également d'effectuer des manipulations complémentaires. 
 
-SideeX respecte le standard Selenium. Selenium Ide était jusque là très utilisé jusqu'aà la version 45 de Firefox. Il existe différents projets qui utilisent la technologie Selenium : 
+SideeX respecte le standard Selenium. Selenium Ide était jusque là très utilisé jusqu'à la version 45 de Firefox. Il existe différents projets qui utilisent la technologie Selenium : 
  - Selenium IDE qui permet de comprendre les tests automatisés, 
  - [http://www.seleniumhq.org/projects/remote-control/](Selenium RC) qui permet de piloter différents navigateurs,
  - [http://www.protractortest.org](Protractor) pour tester les applications AngularJS,
@@ -41,7 +40,7 @@ SideeX respecte le standard Selenium. Selenium Ide était jusque là très utili
 
 ### Interface Graphique de SideeX
 
-![Installation SideeX](/docs/Sideex-ExempleJeu.png.png)
+![Installation SideeX](/docs/Sideex-ExempleJeu.png)
 
 Une fois démarré, l'interface SideeX se décompose en plusieurs sections
 
