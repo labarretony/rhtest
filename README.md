@@ -4,7 +4,7 @@ Les TP concernant le test nécessitent l'application mise sous test appelée RhT
 
 ![Copie d'écran de l'application RhTest](/docs/screenshot.png)
 
-Pour installer cette application, veuillez suivre les indications présentée [ici](docs/prerequis_TP.md)
+Pour installer cette application, veuillez suivre les indications présentées [ici](docs/prerequis_TP.md)
 
 ## Cours
 Le support de présentation du cours permet de disposer des éléments essentiels et memo, mais ne présente pas tous les exemples donnés en séance. il est disponible [ici](Cours/Cours_diapo_2020.pdf)
