@@ -12,7 +12,7 @@ Le support de présentation du cours permet de disposer des éléments essentiel
 ## TPs
 Pour illustrer les phases thériques vus en cours, les manipulations se font au travers de travaux pratiques. Ces TPs sont organisés autour de 4 thèmes et dimensionnés au regard du volume d'heures disponibles sur le module. Le temps en séance permet de manipuler les outils mais nécessite un travail personnel de synthèse et de rédaction du dossier de test.
 
-1. [Construire son référentiel d'exigence](Cours_diapo_2021.pdf)
+1. [Construire son référentiel d'exigence](TP-ReferentielExigence/Readme.md)
 2. [Construire son test d'Api](TP-TestAPIAutomatise/Readme.md)
 3. [Construire son test de montée en charge](TP-TestCharge/Readme.md)
 4. [Construire son premier test fonctionnel automatisé](TP-TestFonctionnelAutomatise/Readme.md)
