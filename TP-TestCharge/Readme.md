@@ -29,7 +29,7 @@ Notre environnement Jmeter est prêt, on peut donc procéder à l’initialisati
 1. Rédiger le scénario prévu pour le test de montée en charge et définir le modèle d'injection:
 *  Ouvrir l’application
 * Ajouter un salarié
-* Rechercher un salarié par le matricule
+* Rechercher un salarié par son nom
 * Modifier un salarié
 2. Enregistrer le scénario de tests
 3. Epurer le scénario
