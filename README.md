@@ -12,15 +12,16 @@ Le support de présentation du cours permet de disposer des éléments essentiel
 ## TPs
 Pour illustrer les phases thériques vus en cours, les manipulations se font au travers de travaux pratiques. Ces TPs sont organisés autour de 4 thèmes et dimensionnés au regard du volume d'heures disponibles sur le module. Le temps en séance permet de manipuler les outils mais nécessite un travail personnel de synthèse et de rédaction du dossier de test.
 
-1. [Construire son référentiel d'exigence](TP-ReferentielExigence/Readme.md)
-2. [Construire son test d'Api](TP-TestAPIAutomatise/Readme.md)
-3. [Construire son test de montée en charge](TP-TestCharge/Readme.md)
-4. [Construire son premier test fonctionnel automatisé](TP-TestFonctionnelAutomatise/Readme.md)
+1. [Construire son premier test fonctionnel automatisé](TP-TestFonctionnelAutomatise/Readme.md)
+2. [Construire son référentiel d'exigence](TP-ReferentielExigence/Readme.md)
+3. [Construire son test d'Api](TP-TestAPIAutomatise/Readme.md)
+4. [Construire son test de montée en charge](TP-TestCharge/Readme.md)
+
 
 Les travaux sont à réaliser par groupe de  3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. Hormis le référentiel d'exigence qui est le 1er TP à réaliser, les 3 autres peuvent être effectués dans l'ordre que vous souhaitez mais s'appuie systématiquement sur le 1er.
 
 
-Le rendu final est un zip nommé: 2021-[Noms des personnes du groupe].zip, envoyé à labarre-a@mgdis.fr et doit contenir:
+Le rendu final est un zip nommé: 2022-[Noms des personnes du groupe].zip, envoyé à labarre-a@mgdis.fr et doit contenir:
 
 1. le référentiel d'exigence fourni en modèle dans le tp complété des cas de test et exigences établis en fonction du cahier des charges.
 2. Le Workspace SoapUI contenant les ressources demandées ainsi que les cas de test et leurs assertions.
