@@ -18,7 +18,7 @@ Le livrable de ce TP est un dossier de tests présentant :
 
  1. Installation de l'application RhTest
  2. Disposer du référentiel d'exigences
- 3. Installer le plugin Chrome ou Firefox SideeX depuis la page https://www.selenium.dev/selenium-ide/
+ 3. Installer le plugin Chrome ou Firefox Selenium IDE depuis la page https://www.selenium.dev/selenium-ide/
 
  Une fois Selenium Ide  installé, l'outil est disponible dans les barres d'outils de  Chrome ou Firefox sur l'icone 
 
