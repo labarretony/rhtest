@@ -19,7 +19,7 @@ Pour illustrer les phases thériques vus en cours, les manipulations se font au 
 4. [Construire son test de montée en charge](TP-TestCharge/Readme.md)
 
 
-Les travaux sont à réaliser par groupe de  3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. Hormis le référentiel d'exigence qui est le 1er TP à réaliser, les 3 autres peuvent être effectués dans l'ordre que vous souhaitez mais s'appuie systématiquement sur le 1er.
+Les travaux sont à réaliser par groupe de  3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. 
 
 
 Le rendu final est un zip nommé: 2022-[Noms des personnes du groupe].zip, envoyé à labarre-a@mgdis.fr et doit contenir:
