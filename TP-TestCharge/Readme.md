@@ -74,7 +74,7 @@ ce même scénario aurait pu être écrit manuellement.
 Jmeter écrit ainsi une séquence unitaire qu’il faudra ensuite tirer en simulant plusieurs sessions
 
 
-Ajouter Plan de travail > Eléments hors test > Enregistreur de script de test http(s).
+Ajouter Plan de test > Eléments hors test > Enregistreur de script de test http(s).
 
 ![Jmeter enregistr](/docs/Jmeter-enregistr.png) 
 
