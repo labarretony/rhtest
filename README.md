@@ -27,7 +27,7 @@ Le rendu final est un zip nommé: 2022-[Noms des personnes du groupe].zip, envoy
 1. le référentiel d'exigence fourni en modèle dans le tp complété des cas de test et exigences établis en fonction du cahier des charges.
 2. Le Workspace SoapUI contenant les ressources demandées ainsi que les cas de test et leurs assertions.
 3. Le jmx pour Jmeter (et fichiers additionnels tels que csv par exemple) du test de charge ansi que les résultats
-4. Les cas de test implémentés dans SideeX et enregistré au format HTML
+4. Les cas de test implémentés dans Selenium et enregistré au format HTML
 5. Un dossier de test (Max 4 pages) présentant les résultats des test fonctionnels, d'api et de charge qui doivent montrer la bonne exécution du test ou au contraire les défaillances constatées.
 
 
