@@ -96,7 +96,9 @@ Dans Firefox, configurer un proxy sur le port 8888.
 
 ![Jmeter Hijacking](/docs/Jmeter-hijacking.png) 
 
-Dans Firefox, effectueur son scénario cible, puis arrêter le serveur Proxy (enregisteur de script de test
+
+
+Dans Firefox, effectuer son scénario cible, puis arrêter le serveur Proxy (enregisteur de script de test
 http).
 Vérifier l’enregistrement du scénario. (vous devez voir apparaitre des pages dans le groupe d’unité.)
 
