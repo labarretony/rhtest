@@ -92,7 +92,8 @@ Dans Firefox, configurer un proxy sur le port 8888.
 
 ![Jmeter Firefox](/docs/Jmeter-Firefox.png) 
 
-ATTENTION, dans les versions récentes de firefox, il n'est plus possible de faire passer le traffic par un proxy pour des adresses locales (par défaut). Auparavant l'interface proposait par défaut de désactiver le proxy pour les adresses locales. Si votre scénario ne s'enregistre pas dans Firefox, dans ce cas il faut forcer le paramètre network.proxy.allow_hijacking_localhost à true (plus d'info sur https://www.developsec.com/2020/05/29/proxying-localhost-on-firefox/) sur l'adresse about:config
+:warning: Dans les versions récentes de firefox, il n'est plus possible de faire passer le traffic par un proxy pour des adresses locales (par défaut). Auparavant l'interface proposait par défaut de désactiver le proxy pour les adresses locales. Si votre scénario ne s'enregistre pas dans Firefox, dans ce cas il faut forcer le paramètre network.proxy.allow_hijacking_localhost à true (plus d'info sur https://www.developsec.com/2020/05/29/proxying-localhost-on-firefox/) sur l'adresse about:config
+
 Dans Firefox, effectueur son scénario cible, puis arrêter le serveur Proxy (enregisteur de script de test
 http).
 Vérifier l’enregistrement du scénario. (vous devez voir apparaitre des pages dans le groupe d’unité.)
