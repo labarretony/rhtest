@@ -1,6 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import { EmployeeModule } from "./employee/employee.module";
+import swagger from "./resources/swagger.json";
 
 interface Salarie {
 	id: string;
@@ -28,6 +29,10 @@ class Server {
 		);
 
 		new EmployeeModule(this.#app);
+		this.#app.use("/docs", express.static(`${__dirname}/public`));
+		this.#app.get("/swagger.json", (req, res) => {
+			res.json(swagger);
+		});
 
 		return this.#app;
 	}
