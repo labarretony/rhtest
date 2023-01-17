@@ -157,6 +157,30 @@ class Server {
 			res.status(200).send(message);
 		});
 
+		this.#app.delete("/api/supprimer", function (req: Request, res: Response) {
+			let message = "";
+			if (req.query.id === "") {
+				message = "le salarié n'a pas été trouvé";
+				console.log("pas de matricule trouvé");
+				return res.status(400).send(message);
+			}
+
+			console.log(`Suppression du matricule ${req.query.id} en cours`);
+			const listesalarie: Salarie[] = salaries.data;
+			const found = listesalarie.findIndex(
+				(salarie) => salarie.id === req.query.id,
+			);
+			if (found === -1) {
+				message = "le salarié n'a pas été trouvé";
+				console.log("pas de matricule trouvé");
+				return res.status(400).send(message);
+			}
+
+			listesalarie.splice(found, 1);
+			message = "Le salarié a bien été supprimé";
+			res.status(200).send(message);
+		});
+
 		return this.#app;
 	}
 
