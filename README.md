@@ -2,9 +2,9 @@
 
 Les TP concernant le test nécessitent l'application mise sous test appelée RhTest disponible dans les documents ci dessous. Pour faciliter les travaux en séance, vous devrez vous munir de votre ordinateur portable en disposant des droits d'accès administrateur sur celui-ci. L'exécution de l'application nécessite de disposer de nodeJs. Les explications ci dessous sont données à titre indicatif pour une installation sous Windows. L'installation est également possible sous Linux (ubuntu), non décrit dans cet article. 
 
-![Copie d'écran de l'application RhTest](img/screenshot.png)
+![Copie d'écran de l'application RhTest](cours/img/screenshot.png)
 
-Pour installer cette application, veuillez suivre les indications présentées [ici](docs/prerequis_TP.md)
+Pour installer cette application, veuillez suivre les indications présentées [ici](cours/img/prerequis_TP.md)
 
 ## Cours
 Le support de présentation du cours permet de disposer des éléments essentiels et memo, mais ne présente pas tous les exemples donnés en séance. il est disponible [ici](cours/Cours_diapo_2021.pdf) TODO !!
