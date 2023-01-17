@@ -29,7 +29,7 @@ class Server {
 		);
 
 		new EmployeeModule(this.#app);
-		this.#app.use("/docs", express.static(`${__dirname}/public`));
+		this.#app.use("/", express.static(`${__dirname}/public`));
 		this.#app.get("/swagger.json", (req, res) => {
 			res.json(swagger);
 		});

@@ -2,7 +2,8 @@
   "openapi":"3.0.0",
   "info":{
      "title":"API RH",
-     "version":"1.0.0"
+     "version":"1.0.0",
+     "description": "Application pour apprentissage des outils et méthodes de test.\n\nDans les exemples ci dessous, l'application répond sur http://{server}:{port}"
   },
   "paths":{
      "/api/rechercher":{
