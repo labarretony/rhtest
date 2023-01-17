@@ -1,5 +1,6 @@
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
+import fs from "node:fs";
 import salaries from "./resources/salarie.json";
 
 interface Salarie {
@@ -179,6 +180,19 @@ class Server {
 			listesalarie.splice(found, 1);
 			message = "Le salarié a bien été supprimé";
 			res.status(200).send(message);
+		});
+
+		this.#app.delete("/api/deleteall", function (req: Request, res: Response) {
+			salaries.data = [];
+			res.sendStatus(200);
+		});
+
+		this.#app.delete("/api/datatest", function (req: Request, res: Response) {
+			const fileData = JSON.parse(
+				fs.readFileSync(`${__dirname}/resources/salarie.json`, "utf-8"),
+			);
+			salaries.data = fileData.data;
+			res.status(200).send("Le fichier de salarié a été reinitialisé");
 		});
 
 		return this.#app;
