@@ -1,5 +1,7 @@
-import express, { Express, Request, Response } from "express";
+import express, { Express } from "express";
 import cors from "cors";
+import prometheusClient from "prom-client";
+
 import { EmployeeModule } from "./employee/employee.module";
 import swagger from "./resources/swagger.json";
 
@@ -17,6 +19,10 @@ class Server {
 
 	constructor() {
 		this.#app = express();
+
+		prometheusClient.collectDefaultMetrics({
+			labels: { service: "rhapi" },
+		});
 	}
 
 	bootstrap() {
@@ -29,9 +35,18 @@ class Server {
 		);
 
 		new EmployeeModule(this.#app);
+
 		this.#app.use("/", express.static(`${__dirname}/public`));
+
 		this.#app.get("/swagger.json", (req, res) => {
 			res.json(swagger);
+		});
+
+		this.#app.get("/metrics", async (req, res) => {
+			res.writeHead(200, {
+				"Content-Type": prometheusClient.register.contentType,
+			});
+			return res.end(await prometheusClient.register.metrics());
 		});
 
 		return this.#app;
