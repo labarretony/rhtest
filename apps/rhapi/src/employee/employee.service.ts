@@ -36,13 +36,13 @@ class EmployeeService {
 			"Le salaire doit être un nombre positif",
 		);
 
-		const numLevel = Math.abs(parseInt(salary));
+		const numLevel = Math.abs(parseInt(level));
 		assert(
-			numLevel && (numLevel > 10 || isNaN(numLevel)),
+			numLevel && numLevel < 10 && !isNaN(numLevel),
 			"Le niveau doit être > -10 et < 10",
 		);
 
-		assert(id, "Le matricule est obligatoire");
+		assert(id.length > 0, "Le matricule est obligatoire");
 
 		const employees = await this.list();
 

@@ -148,10 +148,12 @@ class EmployeeController {
 				res.sendStatus(200);
 			},
 		);
+
 		this.#router.delete(
 			"/api/datatest",
 			async (req: Request, res: Response) => {
 				await this.#employeeService.reset();
+				res.send("Le fichier de salarié a été reinitialisé");
 			},
 		);
 
