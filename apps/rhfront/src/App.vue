@@ -82,20 +82,6 @@ export default {
       const { data } = await axios.get('http://localhost:8080/api/rechercher?mode=all');
       this.employees = data;
     },
-    async createOrUpdateEmployee() {
-      if (this.employee.id) {
-        await axios.put(`http://localhost:8080/api/modifier?id=${this.employee.id}`, this.employee);
-      } else {
-        await axios.post('http://localhost:8080/api/ajouter', this.employee);
-      }
-      this.employee = {
-        id: '',
-        name: '',
-        lastname: '',
-        salary: '',
-        level: ''
-      }
-    },
     async createEmployee(employee) {
       await axios.post(`http://localhost:8080/api/ajouter?id=${employee.id}&name=${employee.name}&lastname=${employee.lastname}&salary=${employee.salary}&level=${employee.level}`);
       this.employee = {
