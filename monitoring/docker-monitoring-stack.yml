@@ -16,3 +16,9 @@ services:
     volumes:
       - ./prometheus:/etc/prometheus
     command: --web.enable-lifecycle  --config.file=/etc/prometheus/prometheus.yml
+
+  rhapi:
+    build: ../apps/rhapi
+    container_name: rhapi
+    ports:
+      - 8080:8080

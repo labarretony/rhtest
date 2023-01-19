@@ -30,7 +30,6 @@ class EmployeeService {
 		level: string,
 		kind: "create" | "update",
 	) {
-		console.log(salary);
 		const numSalary = parseFloat(salary);
 		assert(
 			salary && numSalary > 0 && !isNaN(numSalary),
