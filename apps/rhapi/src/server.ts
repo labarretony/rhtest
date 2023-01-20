@@ -5,15 +5,6 @@ import prometheusClient from "prom-client";
 import { EmployeeModule } from "./employee/employee.module";
 import swagger from "./resources/swagger.json";
 
-interface Salarie {
-	id: string;
-	name: string;
-	lastname: string;
-	salary: string;
-	level: string;
-	time: number;
-}
-
 class Server {
 	#app: Express;
 

@@ -3,12 +3,7 @@
     <div class="grid">
       <div>
         <h1>RhTest</h1>
-        <form>
-          <div class="grid">
-            <input v-model="searchTerm" placeholder="Rechercher">
-            <button @click="search(searchTerm)">Rechercher</button>
-          </div>
-        </form>
+        
         <form @submit.prevent="createOrUpdateEmployee">
           <label>Matricule: <input v-model="employee.id" placeholder="ID"></label>
           <div class="grid">
@@ -24,9 +19,12 @@
             <button @click="updateEmployee(employee)">Modifier</button>
           </div>
         </form>
-      </div>
-      <div>
         <h2>Liste des salariés :</h2>
+        <form>
+          <div class="grid">
+            <input v-model="searchTerm" type="search" id="search" name="search" placeholder="Rechercher" @keyup="search(searchTerm)">
+          </div>
+        </form>
         <table>
           <thead>
             <tr>
@@ -46,12 +44,18 @@
               <td>{{ employee.salary }}</td>
               <td>{{ employee.level }}</td>
               <td>
-                <button @click="deleteEmployee(employee)">X</button>
+                <button class="outline small-btn" @click="deleteEmployee(employee)">🗑️</button>
               </td>
             </tr>
           </tbody>
         </table>
+        <h2>Administration</h2>
+        <div class="admin">
+            <button class="small-btn" @click="deleteAll()">🗑️ Supprimer les données</button>
+            <button class="small-btn" @click="resetData()">↩ Restaurer les données de test</button>
+        </div>
       </div>
+    
     </div>
   </main>
 </template>
@@ -81,6 +85,13 @@ export default {
     async fetchEmployees() {
       const { data } = await axios.get('http://localhost:8080/api/rechercher?mode=all');
       this.employees = data;
+    },
+    async search(name) {
+      if(!name.length) {
+        return this.fetchEmployees();
+      }
+      const { data } = await axios.get(`http://localhost:8080/api/rechercher?name=${name}`);
+      this.employees = [...data];
     },
     async createEmployee(employee) {
       await axios.post(`http://localhost:8080/api/ajouter?id=${employee.id}&name=${employee.name}&lastname=${employee.lastname}&salary=${employee.salary}&level=${employee.level}`);
@@ -114,7 +125,29 @@ export default {
         level: ''
       }
       return this.fetchEmployees();
+    },
+    async deleteAll(employee) {
+      await axios.delete('http://localhost:8080/api/deleteall');
+      return this.fetchEmployees();
+    },
+    async resetData() {
+      await axios.delete('http://localhost:8080/api/datatest');
+      return this.fetchEmployees();
     }
   }
 }
 </script>
+
+<style>
+.small-btn {
+  width: auto;
+  display: inline;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.75em;
+}
+
+.admin > button {
+  margin: 0.25rem;
+}
+</style>
