@@ -7,7 +7,7 @@
       <label>Prénom: <input v-model="employee.lastname" placeholder="Prénom"></label>
     </div>
     <div class="grid">
-      <label>Evolution: <input v-model="employee.level" placeholder="Niveau"></label>
+      <label>Niveau: <input v-model="employee.level" placeholder="Niveau"></label>
       <label>Salaire: <input v-model="employee.salary" placeholder="Salaire"></label>
     </div>
     <div class="grid">

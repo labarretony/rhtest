@@ -4,6 +4,10 @@
       <div>
         <h1>RhTest</h1>
 
+        <div class="error" v-if="errorMessage">
+          <p>Une erreur est survenue : {{errorMessage}}</p>
+        </div>
+
         <h2>Création d'un salarié :</h2>
         <Employee @created="createdEvent"/>
         <h2>Liste des salariés :</h2>
@@ -20,7 +24,7 @@
               <th>Nom</th>
               <th>Prénom</th>
               <th>Salaire</th>
-              <th>Evolution</th>
+              <th>Niveau</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -55,7 +59,7 @@
 
 <script>
 import Employee from './components/Employee.vue';
-import {fetch, search, create, update, deleteOne, deleteAll, resetData, emptyEmployee} from './services/employee.service';
+import { fetch, search, create, update, deleteOne, deleteAll, resetData, emptyEmployee } from './services/employee.service';
 
 export default {
   data() {
@@ -64,6 +68,7 @@ export default {
       employees: [],
       searchTerm: "",
       updateMode: false,
+      error: null
     };
   },
   components: { Employee },
@@ -81,9 +86,14 @@ export default {
       this.employees = await search(name);
     },
     async createdEvent(employee) {
-      await create(employee);
-      this.employee = emptyEmployee;
-      return this.fetchEmployees();
+      try {
+        await create(employee);
+      } catch (error) {
+        this.errorMessage = error.response.data;
+      } finally {
+        this.employee = emptyEmployee;
+        return this.fetchEmployees();
+      }
     },
     toggleUpdate(employee) {
       this.updateMode = !this.updateMode;
@@ -94,15 +104,25 @@ export default {
       }
     },
     async updateEmployee(employee) {
-      await update(employee);
-      this.employee = emptyEmployee;
-      this.updateMode = false;
-      return this.fetchEmployees();
+      try {
+        await update(employee);
+      } catch (error) {
+        this.errorMessage = error.response.data;
+      } finally {
+        this.employee = emptyEmployee;
+        this.updateMode = false;
+        return this.fetchEmployees();
+      }
     },
     async deleteEmployee(employee) {
-      await deleteOne(employee);
-      this.employee = emptyEmployee;
-      return this.fetchEmployees();
+      try {
+        await deleteOne(employee);
+      } catch (error) {
+        this.errorMessage = error.response.data;
+      } finally {
+        this.employee = emptyEmployee;
+        return this.fetchEmployees();
+      }
     },
     async deleteAll(employee) {
       await deleteAll()
@@ -111,6 +131,9 @@ export default {
     async resetData() {
       await resetData();
       return this.fetchEmployees();
+    },
+    closeError() {
+      this.errorMessage = null;
     }
   },
 }
@@ -128,4 +151,10 @@ export default {
 .admin>button {
   margin: 0.25rem;
 }
+
+.error > p {
+  color: #e53935;
+}
+
+
 </style>
