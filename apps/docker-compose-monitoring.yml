@@ -1,12 +1,15 @@
 version: "3"
 services:
+  ######################
+  # MONITORING STACK
+  #############
   grafana:
     image: grafana/grafana-oss:9.3.2
     container_name: grafana
     ports:
       - 3000:3000
     volumes:
-      - ./grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
+      - ./monitoring/grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
 
   prometheus:
     image: prom/prometheus:v2.41.0
@@ -14,11 +17,18 @@ services:
     ports:
       - 9090:9090
     volumes:
-      - ./prometheus:/etc/prometheus
+      - ./monitoring/prometheus:/etc/prometheus
     command: --web.enable-lifecycle  --config.file=/etc/prometheus/prometheus.yml
 
+  noise:
+    build: ./monitoring/noise
+    container_name: noise
+
+  ######################
+  # RHTEST APP
+  #############
   rhapi:
-    build: ../apps/rhapi
+    build: ./rhapi
     container_name: rhapi
     ports:
       - 8080:8080

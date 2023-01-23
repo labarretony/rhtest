@@ -1,0 +1,16 @@
+version: '3'
+services:
+  ######################
+  # RHTEST APP
+  #############
+  rhapi:
+    build: ./rhapi
+    container_name: rhapi
+    ports:
+      - 8080:8080
+
+  # rhfront:
+  #   build: ./rhfront
+  #   container_name: rhfront
+  #   ports:
+  #     - 8086:8086
