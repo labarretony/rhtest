@@ -10,6 +10,7 @@ services:
       - 3000:3000
     volumes:
       - ./monitoring/grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
+      - grafana-data:/var/lib/grafana
 
   prometheus:
     image: prom/prometheus:v2.41.0
@@ -32,3 +33,6 @@ services:
     container_name: rhapi
     ports:
       - 8080:8080
+
+volumes:
+  grafana-data:
