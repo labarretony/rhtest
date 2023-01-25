@@ -12,6 +12,7 @@ RUN npm run build
 FROM node:18
 COPY --from=dependencies /build /app/
 COPY --from=builder /build/dist /app/
+COPY ./src/public /app
 RUN ls /app/
 
 USER node

@@ -34,5 +34,11 @@ services:
     ports:
       - 8080:8080
 
+  rhfront:
+    build: ./rhfront
+    container_name: rhfront
+    ports:
+      - 8086:80
+
 volumes:
   grafana-data:

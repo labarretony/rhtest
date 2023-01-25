@@ -9,8 +9,8 @@ services:
     ports:
       - 8080:8080
 
-  # rhfront:
-  #   build: ./rhfront
-  #   container_name: rhfront
-  #   ports:
-  #     - 8086:8086
+  rhfront:
+    build: ./rhfront
+    container_name: rhfront
+    ports:
+      - 8086:80
