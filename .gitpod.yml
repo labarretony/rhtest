@@ -1,0 +1,9 @@
+ports:
+  - port: 8080
+    visibility: public
+  - port: 8086
+    visibility: public
+  - port: 9090
+    visibility: public
+  - port: 3000
+    visibility: public
