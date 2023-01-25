@@ -1,5 +1,7 @@
 # rhtest
 
+[![Gitpod](https://camo.githubusercontent.com/76e60919474807718793857d8eb615e7a50b18b04050577e5a35c19421f260a3/68747470733a2f2f676974706f642e696f2f627574746f6e2f6f70656e2d696e2d676974706f642e737667)](https://gitpod.io#https://github.com/labarretony/rhtest)
+
 Les TP concernant le test nécessitent l'application mise sous test appelée RhTest disponible dans les documents ci dessous. Pour faciliter les travaux en séance, vous devrez vous munir de votre ordinateur portable en disposant des droits d'accès administrateur sur celui-ci. L'exécution de l'application nécessite de disposer de nodeJs. Les explications ci dessous sont données à titre indicatif pour une installation sous Windows. L'installation est également possible sous Linux (ubuntu), non décrit dans cet article. 
 
 ![Copie d'écran de l'application RhTest](cours/img/screenshot.png)

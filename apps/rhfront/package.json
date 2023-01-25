@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "rm .env | true && echo VITE_GITPOD_WORKSPACE_URL=$GITPOD_WORKSPACE_URL > .env",
+    "prebuild": "rm .env && echo VITE_GITPOD_WORKSPACE_URL=$GITPOD_WORKSPACE_URL > .env",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

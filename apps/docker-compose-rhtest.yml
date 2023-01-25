@@ -10,7 +10,11 @@ services:
       - 8080:8080
 
   rhfront:
-    build: ./rhfront
+    build:
+      context: ./rhfront
+      dockerfile: Dockerfile
+      args:
+        - GITPOD_WORKSPACE_URL
     container_name: rhfront
     ports:
       - 8086:80

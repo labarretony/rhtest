@@ -1,41 +1,45 @@
 import axios from "axios";
 
+const BASE_URL = `https://8080-${import.meta.env.VITE_GITPOD_WORKSPACE_URL.split('https://')[1]}`;
+
+console.log(BASE_URL);
+
 async function create(employee) {
   await axios.post(
-    `http://localhost:8080/api/ajouter?id=${employee.id}&name=${employee.name}&lastname=${employee.lastname}&salary=${employee.salary}&level=${employee.level}`
+    `${BASE_URL}/api/ajouter?id=${employee.id}&name=${employee.name}&lastname=${employee.lastname}&salary=${employee.salary}&level=${employee.level}`
   );
 }
 
 async function fetch() {
   const { data } = await axios.get(
-    "http://localhost:8080/api/rechercher?mode=all"
+    `${BASE_URL}/api/rechercher?mode=all`
   );
   return data;
 }
 
 async function search(name) {
   const { data } = await axios.get(
-    `http://localhost:8080/api/rechercher?name=${name}`
+    `/api/rechercher?name=${name}`
   );
   return [...data];
 }
 
 async function update(employee) {
   await axios.post(
-    `http://localhost:8080/api/modifier?id=${employee.id}&name=${employee.name}&lastname=${employee.lastname}&salary=${employee.salary}&level=${employee.level}`
+    `/api/modifier?id=${employee.id}&name=${employee.name}&lastname=${employee.lastname}&salary=${employee.salary}&level=${employee.level}`
   );
 }
 
 async function deleteOne(employee) {
-  await axios.delete(`http://localhost:8080/api/supprimer?id=${employee.id}`);
+  await axios.delete(`/api/supprimer?id=${employee.id}`);
 }
 
 async function deleteAll() {
-  await axios.delete("http://localhost:8080/api/deleteall");
+  await axios.delete(`/api/deleteall`);
 }
 
 async function resetData() {
-  await axios.delete("http://localhost:8080/api/datatest");
+  await axios.delete(`/api/datatest`);
 }
 
 const emptyEmployee = {
