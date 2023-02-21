@@ -5,7 +5,7 @@
     },
     "version": "1.0.0",
     "dependencies": {
-        "express": "~4.16.4",
+        "express": "~4.18.2",
         "request": "~2.88.0",        
         "http-auth": "~3.2.3",
         "morgan": "~1.9.1"
