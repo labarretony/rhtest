@@ -22,7 +22,7 @@ Pour illustrer les phases thériques vus en cours, les manipulations se font au 
 Les travaux sont à réaliser par groupe de  3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. 
 
 
-Le rendu final est un zip nommé: 2022-[Noms des personnes du groupe].zip, envoyé à labarre-a@mgdis.fr et doit contenir:
+Le rendu final est un zip nommé: 2023-[Noms des personnes du groupe].zip, envoyé à labarre-a@mgdis.fr et doit contenir:
 
 1. le référentiel d'exigence fourni en modèle dans le tp complété des cas de test et exigences établis en fonction du cahier des charges.
 2. Le Workspace SoapUI contenant les ressources demandées ainsi que les cas de test et leurs assertions.
