@@ -66,7 +66,7 @@ Ce volet permet de détailler chacune des actions de test et des points de contr
 
 ![Detail Selenium](/docs/Selenium-Result.png)
 
-Ce volet permet de consolider le nombre de test passant ou en échec. Le détail de l'éxécution se trouve quanà un lui dans un journal d'exécution en bas de la fenêtre SideeX.
+Ce volet permet de consolider le nombre de test passant ou en échec. Le détail de l'éxécution se trouve quanà un lui dans un journal d'exécution en bas de la fenêtre Selenium.
 
 
 
