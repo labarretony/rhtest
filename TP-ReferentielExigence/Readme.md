@@ -3,13 +3,15 @@
 
 
 L’objectif du TP est de comprendre la méthodologie de définition des besoins pour créer et tester une application. Le Tp permet de créer un référentiel d’exigences puis les cas de tests associés.
-Le livrable de ce TP est un référentiel de test présentant toutes les exigences et les cas de tests. Un modèle vide est disponible referentiel.xlsx. Vous pouvez choisir un autre format mais celui ci a le mérite d'être simple.
-
+Le livrable de ce TP est :
+- un référentiel de test présentant toutes les exigences et les cas de tests présenté dans un tableur. 
+- Un rapport d'exécution de la campagne de test formelle présentant le taux de couverture, le taux de succes/echec et les anomalies détectées
+- Un rapport d'éxécution de test exploratoire présentant votre constat de fonctionnement et mettant en évidence ce qui n'était pas nécessairement prévu lors de la conception du test.
 
 ## Méthodologie :
 
 L’application demandée par le client consiste à gérer les ressources humaines d’une entreprise.
-Sur la base du cahier des charges ci-dessous, vous devrez établir le référentiel d’exigences ainsi que les cas de tests. Ce référentiel est le document unique qui sert à lister st suivre l’ensemble des tests qui seront réalisés.
+Sur la base du cahier des charges ci-dessous, vous devrez établir le référentiel d’exigences ainsi que les cas de tests. Ce référentiel est le document unique qui sert à lister et suivre l’ensemble des tests qui seront réalisés.
 
 
 Chaque fonctionnalité devra faire l’objet d’une exigence qui aura ses cas de tests :
