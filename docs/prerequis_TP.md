@@ -1,7 +1,7 @@
 # Installation de l'application RHtest
 
 ## Préparation
-1. Si NodeJs n'est pas installé sur votre poste, veuillez passer par l'installation: https://nodejs.org/en/. Installer la version 18.14.2 (LTS) par défaut
+1. Si NodeJs n'est pas installé sur votre poste, veuillez passer par l'installation: https://nodejs.org/en/. Installer la version 20.11.0 (LTS) par défaut
 
 2. Installer Git Bash depuis https://git-for-windows.github.io/ en mode par défaut
 
