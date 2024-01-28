@@ -53,7 +53,7 @@ Le livrable de ce TP est un dossier de tests :
 
  1. Installation de l'application RhTest
  2. Disposer du référentiel d'exigences
- 3. Installer SoapUI Open Source disponible [ici](https://www.soapui.org/downloads/soapui.html)  la version disponible ) ce jour est 5.7.0 
+ 3. Installer SoapUI Open Source disponible [ici](https://www.soapui.org/downloads/soapui.html)  la version disponible ) ce jour est 5.7.2 
 
 ## Travail à réaliser
 
