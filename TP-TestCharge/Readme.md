@@ -18,7 +18,7 @@ Le Jmx (fichier de travail de Jmeter) sera à fournir à la fin du TP.
  1. Installation de l'application RhTest
  2. Disposer du référentiel d'exigences avec le ou les exigences de performance
  3. Installer L’outil Jmeter (http://jmeter.apache.org/) disponible à l’adresse :
-http://jmeter.apache.org/download_jmeter.cgi. En date de préparation du TP, la version est la 5.5
+http://jmeter.apache.org/download_jmeter.cgi. En date de préparation du TP, la version est la 5.6.3
 Installer les Jmeter plugins. Ils sont disponibles à l’adresse https://jmeter-plugins.org/wiki/PluginsManager/, en téléchargeant je jar disponible sur https://jmeter-plugins.org/get/
 et en le copiant dans le dossier lib/ext
 4. Lancer Jmeter.bat (ou jmeter.sh) selon le système d’exploitation utilisé puis aller dans Options/Plugins Manager et cocher dans les plugins disponibles jpgc – Standard set et Composite Timeline Graph.
