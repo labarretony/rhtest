@@ -14,9 +14,10 @@ Pour illustrer les phases thériques vus en cours, les manipulations se font au 
 
 
 1. [Construire son référentiel d'exigence](TP-ReferentielExigence/Readme.md)
-2. [Construire son premier test fonctionnel automatisé](TP-TestFonctionnelAutomatise/Readme.md)
-3. [Construire son test d'Api](TP-TestAPIAutomatise/Readme.md)
-4. [Construire son test de montée en charge](TP-TestCharge/Readme.md)
+2. [Travailler avec un gestionnaire de test](TP-GestionnaireTest/Readme.md)
+3. [Construire son premier test fonctionnel automatisé](TP-TestFonctionnelAutomatise/Readme.md)
+4. [Construire son test d'Api](TP-TestAPIAutomatise/Readme.md)
+5. [Construire son test de montée en charge](TP-TestCharge/Readme.md)
 
 
 Les travaux sont à réaliser par groupe de  2 à 3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. 
