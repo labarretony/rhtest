@@ -4,7 +4,8 @@ Dans ce TP, on cherche à outiller la gestion des exigences et des cas de test. 
 En effet un outil permettra de connaitre plus facilement l'avancement de l'écriture des cas de test, distribuer les cas à exécuter entre différentes personnes, thématiser les cas, organiser les campagnes de test, mesurer l'avancement de l'exécution et faciliter la communication des résultats de test. 
 
 Aujourd'hui, nous utiliserons l'outil Squash-tm, accessible et relativement facile d'utilisation, il permet de piloter de nombreux projets. Il est utilisé en entreprise. 
-L’objectif du TP est de manipuler un outil de gestion de tests (Jmeter dans notre cas) et suivre l'avancement de la campagne de test.
+
+L’objectif du TP est de manipuler un outil de gestion de tests et suivre l'avancement de la campagne de test.
 
 
 ## Méthodologie et livrable
