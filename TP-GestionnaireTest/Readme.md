@@ -39,7 +39,7 @@ L'application doit s'ouvrir dans votre navigateur
 2. Créer les cas de test dans un format classique
 	- Positionnez vous sur le domaine Cas de test puis cliquer sur ajouter un cas de test
  
-	- Remplissez les champs (a noter les pas de test seront décrit plus tard, dans notre TP, la zobe descriptif permet par exemple de mentionner votre objectif de test.
+	- Remplissez les champs (a noter les pas de test seront décrits plus tard, dans notre TP, la zone descriptif permet par exemple de mentionner votre objectif de test.
  
 	- Sur le cas de test, reliez votre cas à l'exigence en cliquant sur "Exigences vérifiées par ce cas de test"
  
