@@ -31,21 +31,32 @@ L'application doit s'ouvrir dans votre navigateur
 ## Guide d'utilisation 
 
 1. Créer d'abord les exigences
+   
 	Positionnez vous sur le domaine Exigence puis cliquer sur ajouter une exigence.
+
 	Remplissez les champs demandés. La zone description permet notamment de référencer ce que doit faire l'application, la fonctionnalité. 
+ 
 2. Créer les cas de test dans un format classique
 	Positionnez vous sur le domaine Cas de test puis cliquer sur ajouter un cas de test
+ 
 	Remplissez les champs (a noter les pas de test seront décrit plus tard, dans notre TP, la zobe descriptif permet par exemple de mentionner votre objectif de test.
+ 
 	Sur le cas de test, reliez votre cas à l'exigence en cliquant sur "Exigences vérifiées par ce cas de test"
+ 
 	Sur le cas de test, positionnez vous sur Prérequis et pas de test, zone dans laquelle vous pourrez lister les étapes et les points de contrôle.
 
 Renseignez tous vos cas de test
+
 3. Créer une campagne de test
 	Positionnez vous sur le domaine Exécution
+
 	Cliquez sur Ajouter une campagne
+
 	Positionnez vous sur la campagne et ajouter une itération
-	Positionnez vous sur l'itération puis sur la droite de l'écran cliquer sur Plan d'exécution puis Associer les cas de test. 
+
+	Positionnez vous sur l'itération puis sur la droite de l'écran cliquer sur Plan d'exécution puis Associer les cas de test.
+ 
 	Organisez votre/vos campagne(s) (vous avez également la possibilité d'ajouter des suites de test).
 
-4.  Lancer l'exécution de vos campagnes de test et renseigner la statut de chacun de vos tests.
-5.  Récuperer les statistiques d'avancement de couverture et de succès sur la campagne de test. 
+5.  Lancer l'exécution de vos campagnes de test et renseigner la statut de chacun de vos tests.
+6.  Récuperer les statistiques d'avancement de couverture et de succès sur la campagne de test. 
