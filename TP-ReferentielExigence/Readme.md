@@ -8,6 +8,8 @@ Le livrable de ce TP est :
 - Un rapport d'exécution de la campagne de test formelle présentant le taux de couverture, le taux de succes/echec et les anomalies détectées
 - Un rapport d'éxécution de test exploratoire présentant votre constat de fonctionnement et mettant en évidence ce qui n'était pas nécessairement prévu lors de la conception du test.
 
+Pour aller plus loin au niveau outillage de test, nous implémenterons les cas de test du tableau dans un logiciel permettant de gérer les tests et la campagne de test.
+
 ## Méthodologie :
 
 L’application demandée par le client consiste à gérer les ressources humaines d’une entreprise.
@@ -34,8 +36,7 @@ Quelques recommandations pour construire votre référentiel :
 2.	Il faut toujours démarrer par le cas de test nominal, c’est une bonne pratique également lorsque vous implémenterez ces cas dans les outils de test. En effet si votre test aux limites par exemple est en erreur, vous ne saurez pas si la fonctionnalité de base est en succès et vous donnerez dans ce cas une information erronée au développeur en charge de résoudre l’anomalie.
 3.	Appuyez-vous uniquement sur le cahier des charges pour construire le cas de test, en effet vous pourriez être tenté de construire votre référentiel à partir de l’application… sauf que l’application contient des erreurs et des écarts par rapport à l’attendu qui faudra d’ailleurs mettre en évidence dans vos tests automatisés.
 4.	Vous devez pensez aux tests nominaux, aux limites et les cas de test amenant une situation en erreur. N’oubliez pas de préciser différents cas de figure validant la saisie de l’utilisateur dans les champs.
-5.	Pour construire ce référentiel d’exigence vous vous appuierez sur un jeu de donnée qui permet de mettre en évidence les différents cas de test pour valider et mettre en évidence les défaillances de l’application. 
-
+5.	Pour construire ce référentiel d’exigence vous vous appuierez sur un jeu de donnée qui permet de mettre en évidence les différents cas de test pour valider et mettre en évidence les défaillances de l’application.
 
 
 ## Cahier des charges
@@ -48,7 +49,3 @@ Les salaires sont des entiers. A chaque fois qu’un agent effectue une action (
 
 Pour modifier un salarié, l’agent commencera à le rechercher. Les recherches se font par le nom uniquement.
 L’agent peut supprimer sans acquittement un salarié à partir de la liste des salariés disponible dans le tableau. 
-
-
-
-
