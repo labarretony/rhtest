@@ -7,7 +7,7 @@ Les TP concernant le test nécessitent l'application mise sous test appelée RhT
 Pour installer cette application, veuillez suivre les indications présentées [ici](docs/prerequis_TP.md)
 
 ## Cours
-Le support de présentation du cours permet de disposer des éléments essentiels et memo, mais ne présente pas tous les exemples donnés en séance. il est disponible [ici](Cours_diapo_2023.pdf)
+Le support de présentation du cours permet de disposer des éléments essentiels et memo, mais ne présente pas tous les exemples donnés en séance. il est disponible [ici](Cours_Ensibs_2024.pdf)
 
 ## TPs
 Pour illustrer les phases thériques vus en cours, les manipulations se font au travers de travaux pratiques. Ces TPs sont organisés autour de 4 thèmes et dimensionnés au regard du volume d'heures disponibles sur le module. Le temps en séance permet de manipuler les outils mais nécessite un travail personnel de synthèse et de rédaction du dossier de test.
@@ -19,15 +19,16 @@ Pour illustrer les phases thériques vus en cours, les manipulations se font au 
 4. [Construire son test de montée en charge](TP-TestCharge/Readme.md)
 
 
-Les travaux sont à réaliser par groupe de  3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. 
+Les travaux sont à réaliser par groupe de  2 à 3 personnes. Il est évident que le travail devra être organisé au sein du groupe pour se répartir les actions. 
 
 
-Le rendu final est un zip nommé: 2023-[Noms des personnes du groupe].zip, envoyé à labarre-a@mgdis.fr et doit contenir:
+Le rendu final est un zip nommé: 2024-[Noms des personnes du groupe].zip, envoyé à labarre-a@mgdis.fr et doit contenir:
 
 1. le référentiel d'exigence fourni en modèle dans le tp complété des cas de test et exigences établis en fonction du cahier des charges.
-2. Le Workspace SoapUI contenant les ressources demandées ainsi que les cas de test et leurs assertions.
-3. Le jmx pour Jmeter (et fichiers additionnels tels que csv par exemple) du test de charge ansi que les résultats
-4. Les cas de test implémentés dans Selenium et enregistré au format HTML
-5. Un dossier de test (Max 4 pages) présentant les résultats des test fonctionnels, d'api et de charge qui doivent montrer la bonne exécution du test ou au contraire les défaillances constatées.
+2. Le résultat d'exécution des tests
+3. Le Workspace SoapUI contenant les ressources demandées ainsi que les cas de test et leurs assertions.
+4. Le jmx pour Jmeter (et fichiers additionnels tels que csv par exemple) du test de charge ansi que les résultats
+5. Les cas de test implémentés dans Selenium et enregistré au format HTML
+6. Un dossier de test (Max 4 pages) présentant les résultats des test fonctionnels, d'api et de charge qui doivent montrer la bonne exécution du test ou au contraire les défaillances constatées.
 
 
