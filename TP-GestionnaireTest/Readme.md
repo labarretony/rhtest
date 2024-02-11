@@ -24,6 +24,7 @@ Télécharger le fichier squash-tm.mv.db disponible dans le répertoire TP-Gesti
  5. Attendez quelques secondes puis dans un navigateur, lancer http://localhost:8080/squash/login
 
 A noter que si votre port 8080 est déjà occupé, vous pouvez le changer dans le fichier startup.bat
+
 L'application doit s'ouvrir dans votre navigateur
 
 
