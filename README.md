@@ -7,7 +7,7 @@ Les TP concernant le test nécessitent l'application mise sous test appelée RhT
 Pour installer cette application, veuillez suivre les indications présentées [ici](docs/prerequis_TP.md)
 
 ## Cours
-Le support de présentation du cours permet de disposer des éléments essentiels et memo, mais ne présente pas tous les exemples donnés en séance. il est disponible [ici](Cours_Ensibs_2024.pdf)
+Le support de présentation du cours permet de disposer des éléments essentiels et memo, mais ne présente pas tous les exemples donnés en séance. il est disponible [ici](Cours_Ensibs_2025.pdf)
 
 ## TPs
 Pour illustrer les phases thériques vus en cours, les manipulations se font au travers de travaux pratiques. Ces TPs sont organisés autour de 4 thèmes et dimensionnés au regard du volume d'heures disponibles sur le module. Le temps en séance permet de manipuler les outils mais nécessite un travail personnel de synthèse et de rédaction du dossier de test.
